@@ -219,3 +219,67 @@ input[type='checkbox'] {
 div:hover {
 	transform: scale(1.2);
 }
+
+.space {
+    position: relative;
+    top: 2000px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 700px;
+    border-radius: 50%;
+    background: linear-gradient(
+	35deg,
+	#ccffff,
+	#ffffcc
+    );
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes animation {
+    0% {
+	top: 700px;
+	right: 0px;
+	left: 0px;
+    }
+    14% {
+	right: 0px;
+	left: 500px;
+	top: 700px;
+    }
+    28% {
+	
+	right: 0px;
+	left: 500px;
+	top: 1000px;
+    }
+    42% {
+	right: 0px;
+	left: 0px;
+	top: 1000px;
+    }
+    70% {
+	left: -500px;
+	top: 1000px;
+    }
+    84% {
+	right:0px;
+	left: -500px;
+	top: 700px;
+    }
+    100% {
+	right: 0px;
+	left: 0px;
+	top: 700px;
+    }
